@@ -1,0 +1,62 @@
+
+main{
+    flex-grow: 1;
+  
+    display: flex;
+}
+ 
+.content-container{
+flex-grow: 1;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+.content-container h1{
+    display: flex;
+    flex-direction: column;
+    font-size: 8rem;
+    font-family: 'Mulish', sans-serif;
+    color: white;
+
+}
+
+.content-container h1 span{
+    font-size: 2.5rem;
+    font-weight: 200;
+    line-height: 4rem;
+}
+
+.movie-title{
+    color: var(--accent-color);
+    font-size: 3rem;
+}
+
+
+.movie-text{
+    width: 600;
+    font-size: 1.1rem;
+    color: white;
+}
+
+.button{
+    height: 80px;
+    width: 300px;
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 100;
+    font-style: italic;
+
+}
+
+.social-container{
+   
+    width: 48px;
+}
+
+
+

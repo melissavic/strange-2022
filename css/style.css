@@ -20,12 +20,12 @@ body{
    
 }
 
+@media (max-width: 768px) {
+ body{
+     padding: 0 30px;
+     background-color: #0009;
+     background-image: url(../img/background\ 1.png);
+     background-blend-mode: darken;
+ }
 
-
-
-footer{
-        height: 80px;
-      
-
-      
 }

@@ -2,7 +2,7 @@
 header{
     height: 120px;
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
    /*  background-color: aqua; */
   }
@@ -16,6 +16,7 @@ header{
       gap: 40px;
       font-family: 'Roboto', sans-serif;
       font-size: 1.1rem;
+      font-weight: bold;
   }
   
   
@@ -35,7 +36,25 @@ header{
         height:70px; 
     }
     .links-container{
-        display: none;
+        background-color: #000;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left:0;
+        right: 0;
+        bottom: 0;
+        flex-direction: column;
+        justify-content: center;
+        gap: 65px;
+        font-size: 2rem;
+        font-weight: 300;
+       transform: translate(100%);
+       transition: all 1s;
     }
 
+}
+
+.menu-burger-container.show ~ .links-container{
+     transform: translate(0);
+    
 }

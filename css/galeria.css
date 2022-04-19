@@ -1,33 +1,100 @@
+:root{
+    --accent-color: #FF031A;
+}
+
+
+body, html{
+   position: relative;
+   overflow: hidden;
+}
+
+
 body{
     height: 100vh;
     background-color: black;
-    
-}
-
-.links-container{
-    /* background-color: gray; */
-     height: 36px;
-     list-style: none;
-     display: flex;
-     align-items: center;
-     gap: 40px;
-     font-family: 'Roboto', sans-serif;
-     font-size: 1.1rem;
-     text-decoration: none;
-     
- }
-
-
- .links-container a{
-    text-shadow: 2px 2px 2px #000;
-    padding: 8px 5px;
-    transition: all 1s;
+    background-size: cover;
+    background-position: right;
+    background-blend-mode: darken;
+    display:flex;
+    flex-direction:column;
+    padding-left: 128px;
+    padding-right: 128px;
+    animation: zoom 1.5s alternate; 
+   
 }
 
 
+header{
+    height: 120px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  
+  }
+  
+  .links-container{
+   
+      height: 36px;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.1rem;
+      font-weight: bold;
+  }
+  
+  
+  .links-container a{
+      text-shadow: 2px 2px 2px #000;
+      padding: 8px 5px;
+      transition: all 1s;
+  }
+  
+  .links-container a:hover{
+      background-color: var(--accent-color);
+  }
+
+  main{
+    flex-grow: 1;
+    display: flex;
+  }
+
+.wanda-strange{
+
+    position: absolute;
+    background: url(../img/Wanda\ e\ Strange.png);
+    width: 532px; 
+    height: 790px;
+    left: 812px;
+    top: 110px;
+    right: 5px;
+
+
+}
+
+
+.img-container{
+
+   
+    background: url(../img/personagens.jfif);
+    width: 670px;
+    height: 700px;
+    left: -9px;
+    top: 0px;
+
+}
 
 
 footer{
+   
+    justify-content: center;
+    font-weight: 100;
+    font-style: italic;
+    height: 80px;
+    font-family: 'Mulish', sans-serif;
     color: white;
+    align-items: center;
+    
    
 }
